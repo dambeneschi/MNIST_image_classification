@@ -3,23 +3,22 @@
 This repository hosts the machine learning models used to classify the hand-written digit images of the MNIST dataset (42 000 images).
 The model has been created to participate to the corresponding Kaggle "Getting Started" competition "Digit Recognizer": https://www.kaggle.com/c/digit-recognizer.
 
-
-The notebook contains the following steps:
-**Exploratory Data Analysis**
-The EDA goes through a numerical an vizual analysis of the dataset in order to identify the relevant preprocessing and modelisation strategies.
+Best score obtained: 96% of accuracy
 
 
-** Preprocessing **
-The preprocessing consists in 2 steps with the goal to simplify the features and reduce the computing cost of the classifiers:
-- Regarding the distribution of the intensities of the pixels, turns the pixels intensity into binay variables (0 for black, 1 for white)
-- Remove from the set the pixels whose intensities never change over the 42 000 images (always black or white pixel within the 28x28 image)
+The notebooks contain respectively the following steps:
+**EDA, Pretreatment , simple models**
+- The Exploratory Data Analysis goes through a numerical an vizual analysis of the dataset in order to identify the relevant preprocessing and modelisation strategies.
 
-The preprocessing created a simplified train set, containing 670 instead of 784 features, with binary values rather than int value between 0-255.
+- The pre traitement consists in a first reduction of the number of pixels by removing from the set the pixels whose intensities never change over the 42 000 images (always black or white pixel within the 28x28 pixels images). The ne training set is called train_changing_pixels_df.csv
 
-
-** Simple models **
-Simple classifiers have been picked-up in order to get their performances on random sample data, in order to comapre them and do the first submissions. It features:
+- Simple classifiers have been picked-up in order to get their performances on randomly sampled data, in order to comapre them and do the first submissions. It features:
 - k-NN
 - Linear Discriminant Analysis
-- Support Vector Machines (SVC)
-- ...
+- Support Vector Machines (SVC, Linear SVC)
+- Classification Tree
+
+
+** Clustering & Dimension Reduction with visualizations**
+- The unsupervised clustering of the data allows to see how the t-SNE model groups naturally the data together
+- The Dimension Reduction using PCA is carried out with graphs in order to choose the right number of PCA features to keep for further computing
