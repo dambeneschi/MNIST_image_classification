@@ -7,6 +7,7 @@ Best score obtained: 96% of accuracy
 
 
 The notebooks contain respectively the following steps:
+
 **EDA, Pretreatment , simple models**
 - The Exploratory Data Analysis goes through a numerical an vizual analysis of the dataset in order to identify the relevant preprocessing and modelisation strategies.
 
@@ -19,6 +20,8 @@ The notebooks contain respectively the following steps:
 - Classification Tree
 
 
-** Clustering & Dimension Reduction with visualizations**
+
+**Clustering & Dimension Reduction with visualizations**
+
 - The unsupervised clustering of the data allows to see how the t-SNE model groups naturally the data together
 - The Dimension Reduction using PCA is carried out with graphs in order to choose the right number of PCA features to keep for further computing
