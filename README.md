@@ -3,7 +3,9 @@
 This repository hosts the machine learning models used to classify the hand-written digit images of the MNIST dataset (42 000 images).
 The model has been created to participate to the corresponding Kaggle "Getting Started" competition "Digit Recognizer": https://www.kaggle.com/c/digit-recognizer.
 
-Best score obtained: 96% of accuracy
+
+*Best scores obtained: 97% of accuracy with SVC(), 98% with Convolutionnal Neural Network*
+
 
 
 The notebooks contain respectively the following steps:
@@ -25,3 +27,7 @@ The notebooks contain respectively the following steps:
 
 - The unsupervised clustering of the data allows to see how the t-SNE model groups naturally the data together
 - The Dimension Reduction using PCA is carried out with graphs in order to choose the right number of PCA features to keep for further computing
+
+
+**Deep Learning**
+- A comparison between a simple neural network and a convolutional neural network, using Keras & Tensorflow on GPU
